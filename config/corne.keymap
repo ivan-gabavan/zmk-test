@@ -89,19 +89,19 @@
 
         base {
             bindings = <
-&switch_to_en  &kp Q  &kp W  &kp F     &kp P                 &kp B        &kp J    &kp L                 &kp U           &kp Y    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&kp TAB        &kp A  &kp R  &kp S     &hml LS(LG(SPACE)) T  &kp G        &kp M    &hml LS(LG(SPACE)) N  &kp E           &kp I    &kp O                 &kp SEMI
-&kp LSHFT      &kp Z  &kp X  &kp C     &kp D                 &kp V        &kp K    &kp H                 &hml SQT COMMA  &kp DOT  &kp QUESTION          &kp EXCLAMATION
-                             &kp LGUI  &to 3                 &kp SPACE    &kp RET  &lt 2 BACKSPACE       &kp LALT
+&to 1      &kp Q  &kp W  &kp F     &kp P                 &kp B        &kp J    &kp L                 &kp U           &kp Y    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&kp TAB    &kp A  &kp R  &kp S     &hml LS(LG(SPACE)) T  &kp G        &kp M    &hml LS(LG(SPACE)) N  &kp E           &kp I    &kp O                 &kp SEMI
+&kp LSHFT  &kp Z  &kp X  &kp C     &kp D                 &kp V        &kp K    &kp H                 &hml SQT COMMA  &kp DOT  &kp QUESTION          &kp EXCLAMATION
+                         &kp LGUI  &to 3                 &kp SPACE    &kp RET  &lt 2 BACKSPACE       &kp LALT
             >;
         };
 
         ru {
             bindings = <
-&switch_to_en  &kp Q  &hml O I     &kp A     &kp G  &kp COMMA    &kp SEMI  &kp K            &kp E              &kp DOT          &kp X         &kp MINUS
-&kp TAB        &kp F  &kp H        &kp C     &kp N  &kp U        &kp V     &kp Y            &hml BSLH T        &kp B            &kp J         &kp LS(RPAR)
-&kp LSHFT      &kp P  &hml RBKT M  &kp W     &kp L  &kp D        &kp R     &kp LBKT         &kp LC(LA(COMMA))  &kp LC(LA(DOT))  &kp LS(EXCL)  &kp LS(QMARK)
-                                   &kp LGUI  &to 3  &kp SPACE    &kp RET   &lt 2 BACKSPACE  &kp LALT
+&to 0      &kp Q  &hml O I     &kp A     &kp G  &kp COMMA    &kp SEMI  &kp K            &kp E              &kp DOT          &kp X         &kp MINUS
+&kp TAB    &kp F  &kp H        &kp C     &kp N  &kp U        &kp V     &kp Y            &hml BSLH T        &kp B            &kp J         &kp LS(RPAR)
+&kp LSHFT  &kp P  &hml RBKT M  &kp W     &kp L  &kp D        &kp R     &kp LBKT         &kp LC(LA(COMMA))  &kp LC(LA(DOT))  &kp LS(EXCL)  &kp LS(QMARK)
+                               &kp LGUI  &to 3  &kp SPACE    &kp RET   &lt 2 BACKSPACE  &kp LALT
             >;
         };
 
