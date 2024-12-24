@@ -17,65 +17,6 @@
     };
 
 behaviors {
-
-
-  #if ZMK_BEHAVIOR_OMIT(MO)
-          /omit-if-no-ref/
-  #endif
-          mo: momentary_layer {
-              compatible = "zmk,behavior-momentary-layer";
-              #binding-cells = <1>;
-              display-name = "Momentary Layer";
-          };
-      };
-
-  /omit-if-no-ref/ msc: mouse_scroll {
-              compatible = "zmk,behavior-input-two-axis";
-              #binding-cells = <1>;
-              x-input-code = <INPUT_REL_HWHEEL>;
-              y-input-code = <INPUT_REL_WHEEL>;
-              time-to-max-speed-ms = <300>;
-              acceleration-exponent = <0>;
-          };
-      };
-
-      msc_input_listener: msc_input_listener {
-          compatible = "zmk,input-listener";
-          device = <&msc>;
-      };
-
-    /omit-if-no-ref/ mmv: mouse_move {
-                compatible = "zmk,behavior-input-two-axis";
-                #binding-cells = <1>;
-                x-input-code = <INPUT_REL_X>;
-                y-input-code = <INPUT_REL_Y>;
-                time-to-max-speed-ms = <300>;
-                acceleration-exponent = <1>;
-            };
-        };
-
-        mmv_input_listener: mmv_input_listener {
-            compatible = "zmk,input-listener";
-            device = <&mmv>;
-        };
-
-        #if ZMK_BEHAVIOR_OMIT(MKP)
-                /omit-if-no-ref/
-        #endif
-                mkp: mouse_key_press {
-                    compatible = "zmk,behavior-mouse-key-press";
-                    #binding-cells = <1>;
-                };
-            };
-
-            mkp_input_listener: mkp_input_listener {
-                compatible = "zmk,input-listener";
-                device = <&mkp>;
-            };
-
-
-
-
     as: auto_shift {
                 compatible = "zmk,behavior-hold-tap";
                 #binding-cells = <2>;
