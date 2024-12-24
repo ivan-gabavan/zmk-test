@@ -76,11 +76,11 @@
             label = "SWITCH_TO_RU";
         };
 
-        switch_to_en: switch_to_ru {
+        switch_to_en: switch_to_en {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LG(SPACE) &to 0>;
-            label = "SWITCH_TO_RU";
+            label = "SWITCH_TO_EN";
         };
     };
 
@@ -89,7 +89,7 @@
 
         base {
             bindings = <
-&switch_to_ru  &kp Q  &kp W  &kp F     &kp P                 &kp B        &kp J    &kp L                 &kp U           &kp Y    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&switch_to_en  &kp Q  &kp W  &kp F     &kp P                 &kp B        &kp J    &kp L                 &kp U           &kp Y    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
 &kp TAB        &kp A  &kp R  &kp S     &hml LS(LG(SPACE)) T  &kp G        &kp M    &hml LS(LG(SPACE)) N  &kp E           &kp I    &kp O                 &kp SEMI
 &kp LSHFT      &kp Z  &kp X  &kp C     &kp D                 &kp V        &kp K    &kp H                 &hml SQT COMMA  &kp DOT  &kp QUESTION          &kp EXCLAMATION
                              &kp LGUI  &to 3                 &kp SPACE    &kp RET  &lt 2 BACKSPACE       &kp LALT
