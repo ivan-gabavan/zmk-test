@@ -90,18 +90,9 @@ behaviors {
                 os {
                             bindings = <
                 &kp F1  &kp F2      &kp F3       &kp F4     &kp F5     &kp F6       &kp F7     &kp F8     &kp F9     &kp F10       &kp F11        &kp F12
-                &trans  &kp DELETE  &kp LS(TAB)  &kp LEFT   &kp RIGHT  &mkp LCLK    &mkp RCLK  &kp UP     &kp DOWN   &kp TAB       &kt BACKSPACE  &trans
+                &trans  &kp DELETE  &kp LS(TAB)  &kp LEFT   &kp RIGHT  &trans       &trans     &kp UP     &kp DOWN   &kp TAB       &kp BACKSPACE  &trans
                 &trans  &trans      &kp LG(X)    &kp LG(A)  &kp LG(C)  &trans       &trans     &kp LG(V)  &kp LG(F)  &kp LA(LGUI)  &trans         &trans
                                                  &kp LGUI   &to 0      &kp SPACE    &kp ENTER  &mo 3      &kp LALT
-                            >;
-                        };
-
-                        mouse {
-                            bindings = <
-                &trans  &trans  &trans  &trans          &trans           &trans       &trans     &trans        &trans          &trans  &trans  &trans
-                &trans  &trans  &trans  &msc SCRL_LEFT  &msc SCRL_RIGHT  &mkp LCLK    &mkp RCLK  &msc SCRL_UP  &msc SCRL_DOWN  &trans  &trans  &trans
-                &trans  &trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_RIGHT  &mkp LCLK    &mkp RCLK  &mmv MOVE_UP  &mmv MOVE_DOWN  &trans  &trans  &trans
-                                        &trans          &trans           &mkp LCLK    &trans     &trans        &trans
                             >;
                         };
 
