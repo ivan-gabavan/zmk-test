@@ -89,10 +89,10 @@
 
         base {
             bindings = <
-&switch_to_ru  &kp Q  &kp W  &kp F     &kp P                 &kp B        &kp J    &kp L                 &kp U           &kp Y    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&kp TAB        &kp A  &kp R  &kp S     &hml LS(LG(SPACE)) T  &kp G        &kp M    &hml LS(LG(SPACE)) N  &kp E           &kp I    &kp O                 &kp SEMI
-&kp LSHFT      &kp Z  &kp X  &kp C     &kp D                 &kp V        &kp K    &kp H                 &hml SQT COMMA  &kp DOT  &kp QUESTION          &kp EXCLAMATION
-                             &kp LGUI  &to 3                 &kp SPACE    &kp RET  &lt 2 BACKSPACE       &kp LALT
+&switch_to_ru  &kp Q  &kp W  &kp F     &kp P        &kp B                           &kp J    &kp L            &kp U           &kp Y    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&kp TAB        &kp A  &kp R  &kp S     &kp T        &kp G                           &kp M    &kp N            &kp E           &kp I    &kp O                 &kp SEMI
+&kp LSHFT      &kp Z  &kp X  &kp C     &kp D        &kp V                           &kp K    &kp H            &hml SQT COMMA  &kp DOT  &kp QUESTION          &kp EXCLAMATION
+                             &kp LGUI  &lt 3 SPACE  &mt LEFT_SHIFT LA(LS(SPACE))    &kp RET  &lt 2 BACKSPACE  &kp LALT
             >;
         };
 
@@ -110,7 +110,7 @@
 &trans         &kp LS(EXCL)  &kp LS(AT)  &kp LS(POUND)   &kp LS(DLLR)     &kp LS(PRCNT)    &kp LS(CARET)  &kp LS(AMPS)  &kp LS(STAR)  &kp LS(LPAR)  &kp LS(RPAR)  &kp GRAVE
 &kp LESS_THAN  &kp N1        &kp N2      &kp N3          &kp N4           &kp N5           &kp N6         &kp N7        &kp N8        &kp N9        &kp N0        &kp GREATER_THAN
 &trans         &trans        &kp PLUS    &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp FSLH         &kp NUBS       &kp LBKT      &kp RBKT      &kp MINUS     &kp EQUAL     &trans
-                                         &kp LGUI        &trans           &kp SPACE        &kp RET        &trans        &kp LALT
+                                         &kp LGUI        &mo 5            &kp SPACE        &kp RET        &trans        &kp LALT
             >;
         };
 
@@ -129,6 +129,24 @@
 &trans  &trans  &trans  &msc SCRL_LEFT  &msc SCRL_RIGHT  &mkp LCLK    &mkp RCLK  &msc SCRL_UP  &msc SCRL_DOWN  &trans  &trans  &trans
 &trans  &trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_RIGHT  &mkp LCLK    &mkp RCLK  &mmv MOVE_UP  &mmv MOVE_DOWN  &trans  &trans  &trans
                         &trans          &trans           &mkp LCLK    &trans     &trans        &trans
+            >;
+        };
+
+        scroll {
+            bindings = <
+&trans  &trans  &trans  &trans          &trans           &trans       &trans     &trans        &trans          &trans  &trans  &trans
+&trans  &trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_RIGHT  &mkp LCLK    &mkp RCLK  &mmv MOVE_UP  &mmv MOVE_DOWN  &trans  &trans  &trans
+&trans  &trans  &trans  &trans          &trans           &trans       &trans     &trans        &trans          &trans  &trans  &trans
+                        &trans          &trans           &trans       &trans     &trans        &trans
+            >;
+        };
+
+        game-mode {
+            bindings = <
+&kp Q  &kp W  &kp E  &kp R     &kp T      &kp Y        &kp U      &kp I      &kp O     &kp P     &kp LBKT  &kp LBKT
+&kp A  &kp S  &kp D  &kp F     &kp G      &kp H        &kp J      &kp K      &kp L     &kp SEMI  &kp APOS  &kp ENTER
+&kp Z  &kp X  &kp C  &kp V     &kp B      &kp N        &kp M      &kp COMMA  &kp DOT   &kp FSLH  &trans    &to 0
+                     &kp LGUI  &kp SPACE  &kp LSHFT    &kp LSHFT  &kp SPACE  &kp LALT
             >;
         };
     };
