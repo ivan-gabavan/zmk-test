@@ -4,6 +4,10 @@
  * SPDX-License-Identifier: MIT
  */
 
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 1500  // default: 600
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 1    // default: 10
+
+
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
@@ -17,35 +21,6 @@
     chosen { zmk,physical-layout = &foostan_corne_6col_layout; };
 
     behaviors {
-
-    fast_mmv: fast_mmv {
-                /*
-                 * Указываем, что это поведение - "pointing move".
-                 * На всякий случай уточните в вашем ZMK-репо актуальное название compatible,
-                 * иногда оно может быть "zmk,behavior-pointing-move" или "zmk,pointing-move"
-                 */
-                compatible = "zmk,behavior-pointing-move";
-
-                #behavior-cells = <1>;
-
-                /* Ниже — настройки для ускоренного перемещения */
-                move-interval-ms = <5>;    /* Меньше интервал -> курсор «дёргается» чаще */
-                move-min-speed   = <5>;    /* Стартовая скорость */
-                move-max-speed   = <20>;   /* Макс. скорость. Чем больше, тем «быстрее» бегает */
-                move-accel       = <1>;    /* Коэффициент ускорения */
-            };
-
-            smooth_msc: smooth_msc {
-                compatible = "zmk,behavior-pointing-scroll";
-
-                #behavior-cells = <1>;
-
-                /* Настройки «плавного» скролла */
-                scroll-interval-ms = <10>;
-                scroll-min-speed   = <1>;
-                scroll-max-speed   = <5>;
-                scroll-accel       = <1>;
-            };
         as: auto_shift {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -154,8 +129,8 @@
 
         mouses {
             bindings = <
-&trans  &trans     &trans          &smooth_msc SCRL_DOWN  &trans           &trans    &trans  &trans          &fast_mmv MOVE_UP    &trans           &trans     &trans
-&trans  &mkp LCLK  &smooth_msc SCRL_LEFT  &smooth_msc SCRL_UP    &smooth_msc SCRL_RIGHT  &trans    &trans  &fast_mmv MOVE_LEFT  &fast_mmv MOVE_DOWN  &fast_mmv MOVE_RIGHT  &mkp RCLK  &trans
+&trans  &trans     &trans          &msc SCRL_DOWN  &trans           &trans    &trans  &trans          &mmv MOVE_UP    &trans           &trans     &trans
+&trans  &mkp LCLK  &msc SCRL_LEFT  &msc SCRL_UP    &msc SCRL_RIGHT  &trans    &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp RCLK  &trans
 &trans  &trans     &trans          &trans          &trans           &trans    &trans  &trans          &trans          &trans           &trans     &trans
                                    &trans          &trans           &trans    &trans  &trans          &trans
             >;
