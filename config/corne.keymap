@@ -125,8 +125,9 @@
 
         mouses {
             bindings = <
-&trans  &trans     &trans          &msc SCRL_UP    &trans           &trans    &trans  &trans          &mmv MOVE_UP    &trans           &trans     &trans
-&trans  &mkp LCLK  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &trans    &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp RCLK  &trans
+&trans  &trans     &trans          &msc SCRL_UP { speed = <5>; }   &trans           &trans    &trans  &trans          &mmv MOVE_UP { speed = <30>; }   &trans           &trans     &trans
+&trans  &mkp LCLK  &msc  SCRL_LEFT { speed = <5>; } &msc SCRL_DOWN { speed = <5>; } &msc SCRL_RIGHT { speed = <5>; } &trans    &trans  &mmv MOVE_LEFT { speed = <30>; } &mmv
+MOVE_DOWN { speed = <30>; } &mmv MOVE_RIGHT { speed = <30>; } &mkp RCLK  &trans
 &trans  &trans     &trans          &trans          &trans           &trans    &trans  &trans          &trans          &trans           &trans     &trans
                                    &trans          &trans           &trans    &trans  &trans          &trans
             >;
