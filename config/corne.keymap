@@ -26,6 +26,8 @@
                  */
                 compatible = "zmk,behavior-pointing-move";
 
+                #behavior-cells = <1>;
+
                 /* Ниже — настройки для ускоренного перемещения */
                 move-interval-ms = <5>;    /* Меньше интервал -> курсор «дёргается» чаще */
                 move-min-speed   = <5>;    /* Стартовая скорость */
@@ -35,6 +37,8 @@
 
             smooth_msc: smooth_msc {
                 compatible = "zmk,behavior-pointing-scroll";
+
+                #behavior-cells = <1>;
 
                 /* Настройки «плавного» скролла */
                 scroll-interval-ms = <10>;
