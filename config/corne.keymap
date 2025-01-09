@@ -16,6 +16,8 @@
 
 #define AS(keycode) &as LS(keycode) keycode
 
+&msc { acceleration-exponent = <2>; };
+
 / {
     chosen { zmk,physical-layout = &foostan_corne_6col_layout; };
 
