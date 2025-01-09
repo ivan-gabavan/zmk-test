@@ -76,14 +76,14 @@
         switch_to_ru: switch_to_ru {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(SPACE) &to 1>;
+            bindings = <&kp LG(LS(MINUS)) &to 1>;
             label = "SWITCH_TO_RU";
         };
 
         switch_to_en: switch_to_en {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(SPACE) &to 0>;
+            bindings = <&kp LG(LS(MINUS)) &to 0>;
             label = "SWITCH_TO_EN";
         };
     };
@@ -120,10 +120,10 @@
 
         os {
             bindings = <
-&kp F1         &kp F2         &kp F3     &kp F4       &kp F5     &kp F6       &kp F7     &kp F8     &kp UP     &kp F10       &kp F11        &kp F12
-&kp LS(SPACE)  &kp DELETE     &kp DEL    &kp LS(TAB)  &kp TAB    &mkp LCLK    &mkp RCLK  &kp LEFT   &kp DOWN   &kp RIGHT     &kp BACKSPACE  &kp F9
-&soft_off      &kp LS(LG(J))  &kp LG(X)  &kp LG(A)    &kp LG(C)  &trans       &trans     &kp LG(V)  &kp LG(F)  &kp LA(LGUI)  &trans         &to 5
-                                         &kp LGUI     &trans     &kp SPACE    &kp ENTER  &mo 4      &kp LALT
+&kp F1             &kp F2         &kp F3         &kp F4       &kp F5     &kp F6       &kp F7                &kp F8     &kp UP     &kp F10       &kp F11        &kp F12
+&kp LS(LG(MINUS))  &kp DELETE     &kp LG(SPACE)  &kp LS(TAB)  &kp TAB    &mkp LCLK    &mkp RCLK             &kp LEFT   &kp DOWN   &kp RIGHT     &kp BACKSPACE  &kp F9
+&soft_off          &kp LS(LG(J))  &kp LG(X)      &kp LG(A)    &kp LG(C)  &trans       &kp LS(LG(NUMBER_4))  &kp LG(V)  &kp LG(F)  &kp LA(LGUI)  &trans         &to 5
+                                                 &kp LGUI     &trans     &kp SPACE    &kp ENTER             &mo 4      &kp LALT
             >;
         };
 
