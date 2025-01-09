@@ -93,10 +93,10 @@
 
         base {
             bindings = <
-&switch_to_ru  &kp Q  &kp W  &kp F     &kp P               &kp B        &kp J                         &kp L            &kp U           &kp Y    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&kp TAB        &kp A  &kp R  &kp S     &kp T               &kp G        &kp M                         &kp N            &kp E           &kp I    &kp O                 &kp SEMI
-&kp LSHFT      &kp Z  &kp X  &kp C     &kp D               &kp V        &kp K                         &kp H            &hml SQT COMMA  &kp DOT  &kp QUESTION          &kp EXCLAMATION
-                             &kp LGUI  &lt 3 LC(UP_ARROW)  &kp SPACE    &mt LEFT_SHIFT LS(LA(SPACE))  &lt 2 BACKSPACE  &kp LALT
+&switch_to_ru  &kp Q  &kp W  &kp F     &kp P            &kp B        &kp J                         &kp L            &kp U           &kp Y    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&kp TAB        &kp A  &kp R  &kp S     &kp T            &kp G        &kp M                         &kp N            &kp E           &kp I    &kp O                 &kp SEMI
+&kp LSHFT      &kp Z  &kp X  &kp C     &kp D            &kp V        &kp K                         &kp H            &hml SQT COMMA  &kp DOT  &kp QUESTION          &kp EXCLAMATION
+                             &kp LGUI  &lt 3 LA(SPACE)  &kp SPACE    &mt LEFT_SHIFT LS(LA(SPACE))  &lt 2 BACKSPACE  &kp LALT
             >;
         };
 
