@@ -101,10 +101,10 @@
 
         ru {
             bindings = <
-&switch_to_en  &kp Q  &hml O I     &kp A     &kp G               &kp COMMA    &kp SEMI                      &kp K            &kp E              &kp DOT          &kp X         &kp MINUS
-&kp TAB        &kp F  &kp H        &kp C     &kp N               &kp U        &kp V                         &kp Y            &hml BSLH T        &hml S B         &kp J         &kp LS(RPAR)
-&kp LSHFT      &kp P  &hml RBKT M  &kp W     &kp L               &kp D        &kp R                         &kp LBKT         &kp LC(LA(COMMA))  &kp LC(LA(DOT))  &kp LS(EXCL)  &kp LS(QMARK)
-                                   &kp LGUI  &lt 3 LC(UP_ARROW)  &kp SPACE    &mt LEFT_SHIFT LS(LA(SPACE))  &lt 2 BACKSPACE  &kp LALT
+&switch_to_en  &kp Q     &hml O I     &kp A     &kp G               &kp COMMA    &kp SEMI                      &kp K            &kp E              &kp DOT          &kp X         &kp MINUS
+&kp TAB        &hml Z F  &kp H        &kp C     &kp N               &kp U        &kp V                         &kp Y            &hml BSLH T        &hml S B         &kp J         &kp LS(RPAR)
+&kp LSHFT      &kp P     &hml RBKT M  &kp W     &kp L               &kp D        &kp R                         &kp LBKT         &kp LC(LA(COMMA))  &kp LC(LA(DOT))  &kp LS(EXCL)  &kp LS(QMARK)
+                                      &kp LGUI  &lt 3 LC(UP_ARROW)  &kp SPACE    &mt LEFT_SHIFT LS(LA(SPACE))  &lt 2 BACKSPACE  &kp LALT
             >;
         };
 
