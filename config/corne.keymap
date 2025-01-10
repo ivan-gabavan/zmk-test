@@ -91,10 +91,10 @@
 
         base {
             bindings = <
-&switch_to_ru  &kp Q  &kp W  &kp F     &kp P            &kp B        &kp J                         &kp L            &kp U               &kp Y    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&kp TAB        &kp A  &kp R  &kp S     &kp T            &kp G        &kp M                         &kp N            &kp E               &kp I    &kp O                 &kp SEMI
-&kp LSHFT      &kp Z  &kp X  &kp C     &kp D            &kp V        &kp K                         &kp H            &hml SQT COMMA      &kp DOT  &kp QUESTION          &kp EXCLAMATION
-                             &kp LGUI  &lt 3 LA(SPACE)  &kp SPACE    &mt LEFT_SHIFT LS(LA(SPACE))  &lt 2 BACKSPACE  &mt LALT LG(SPACE)
+&switch_to_ru  &kp Q  &kp W  &kp F           &kp P            &kp B        &kp J                         &kp L            &kp U               &kp Y    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&kp TAB        &kp A  &kp R  &kp S           &kp T            &kp G        &kp M                         &kp N            &kp E               &kp I    &kp O                 &kp SEMI
+&kp LSHFT      &kp Z  &kp X  &kp C           &kp D            &kp V        &kp K                         &kp H            &hml SQT COMMA      &kp DOT  &kp QUESTION          &kp EXCLAMATION
+                             &mt LGUI LC(Z)  &lt 3 LA(SPACE)  &kp SPACE    &mt LEFT_SHIFT LS(LA(SPACE))  &lt 2 BACKSPACE  &mt LALT LG(SPACE)
             >;
         };
 
@@ -128,7 +128,7 @@
         mouses {
             bindings = <
 &trans           &msc SCRL_DOWN  &trans          &trans     &trans     &trans    &trans  &trans          &mmv MOVE_UP    &trans           &trans     &trans
-&msc SCRL_RIGHT  &msc SCRL_UP    &msc SCRL_LEFT  &mkp LCLK  &mkp RCLK  &trans    &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp RCLK  &trans
+&msc SCRL_RIGHT  &msc SCRL_UP    &msc SCRL_LEFT  &mkp RCLK  &mkp LCLK  &trans    &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp RCLK  &trans
 &trans           &trans          &trans          &trans     &trans     &trans    &trans  &trans          &trans          &trans           &trans     &trans
                                                  &trans     &trans     &trans    &trans  &trans          &trans
             >;
