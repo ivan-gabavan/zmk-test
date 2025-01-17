@@ -118,10 +118,10 @@
 
         os {
             bindings = <
-&kp ESCAPE  &kp LS(LC(D))  &kp LS(LC(F))  &kp LG(W)       &kp LG(T)  &kp LA(LS(ENTER))    &kp LC(R)  &kp LA(LG(LEFT_ARROW))  &kp UP              &kp LA(LG(RIGHT))  &kp LG(LA(R))  &kp F12
-&kp LG(Q)   &kp DELETE     &kp LG(Z)      &kp LS(TAB)     &kp TAB    &kp LS(LG(F))        &kp LC(D)  &kp LEFT                &kp DOWN            &kp RIGHT          &kp BACKSPACE  &kp LA(LG(R))
-&kp LG(F2)  &kp LS(LG(A))  &kp LG(X)      &kp LG(A)       &kp LG(C)  &kp LG(LS(L))        &kp LSHFT  &kp LG(V)               &kp LG(B)           &kp LA(LGUI)       &kp LG(F)      &to 5
-                                          &mt LGUI LG(Z)  &trans     &kp LEFT_SHIFT       &kp ENTER  &lt 4 LG(LS(J))         &mt LALT LS(LG(Z))
+&kp ESCAPE  &kp LS(LC(D))  &kp LS(LC(F))  &kp LG(W)       &kp LG(T)  &kp LA(LS(ENTER))    &kp LC(R)  &kp LA(LG(LEFT_ARROW))  &kp UP          &kp LA(LG(RIGHT))  &kp LG(LA(R))  &kp F12
+&kp LG(Q)   &kp DELETE     &kp LG(Z)      &kp LS(TAB)     &kp TAB    &kp LS(LG(F))        &kp LC(D)  &kp LEFT                &kp DOWN        &kp RIGHT          &kp BACKSPACE  &kp LA(LG(R))
+&kp LG(F2)  &kp LS(LG(A))  &kp LG(X)      &kp LG(A)       &kp LG(C)  &kp LG(LS(L))        &kp LSHFT  &kp LG(V)               &kp LG(B)       &kp LA(LGUI)       &kp LG(F)      &to 5
+                                          &mt LGUI LG(Z)  &trans     &kp LEFT_SHIFT       &kp ENTER  &lt 4 LG(LS(J))         &mt LALT LG(Z)
             >;
         };
 
