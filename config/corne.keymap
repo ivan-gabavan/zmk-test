@@ -86,12 +86,36 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        c1 {
+            bindings = <&kp ENTER>;
+            key-positions = <16 19>;
+        };
+
+        c4 {
+            bindings = <&kp ESCAPE>;
+            key-positions = <13 22>;
+        };
+
+        dot {
+            bindings = <&kp DOT>;
+            key-positions = <19 20>;
+        };
+
+        comma {
+            bindings = <&none>;
+            key-positions = <20 21>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         base {
             bindings = <
-&kp LG(LS(MINUS))           &kp Q  &kp W  &kp F               &kp P  &kp B        &kp J                       &kp L            &kp U                  &kp Y           &kp LEFT_PARENTHESIS  &kp AT_SIGN
+&kp LG(LS(MINUS))           &kp Q  &kp W  &kp F               &kp P  &kp B        &kp J                       &kp L            &kp U                  &kp Y           &kp LEFT_PARENTHESIS  &kp DOUBLE_QUOTES
 &mt LEFT_CONTROL LA(SPACE)  &kp A  &kp R  &kp S               &kp T  &kp G        &kp M                       &kp N            &kp E                  &kp I           &kp O                 &kp SEMI
 &kp LSHFT                   &kp Z  &kp X  &kp C               &kp D  &kp V        &kp K                       &kp H            &kp DOT                &hml SQT COMMA  &kp QUESTION          &kp EXCLAMATION
                                           &mt LGUI LG(SPACE)  &mo 3  &kp SPACE    &mt LEFT_ALT LS(LA(SPACE))  &lt 2 BACKSPACE  &mt LEFT_SHIFT ESCAPE
