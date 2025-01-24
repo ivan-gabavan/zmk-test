@@ -84,6 +84,20 @@
             bindings = <&kp LG(LS(MINUS)) &to 0>;
             label = "SWITCH_TO_EN";
         };
+
+        select_complite: ce {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp TAB &kp ENTER>;
+            label = "CE";
+        };
+
+        google_meet_mute: google_meet_mute {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(D) &kp LG(E)>;
+            label = "GOOGLE_MEET_MUTE";
+        };
     };
 
     combos {
@@ -105,8 +119,38 @@
         };
 
         comma {
-            bindings = <&none>;
+            bindings = <&kp COMMA>;
             key-positions = <20 21>;
+        };
+
+        skobka {
+            bindings = <&kp LEFT_PARENTHESIS>;
+            key-positions = <7 8>;
+        };
+
+        dollar {
+            bindings = <&kp CARET>;
+            key-positions = <31 32>;
+        };
+
+        carret {
+            bindings = <&kp DOLLAR>;
+            key-positions = <32 33>;
+        };
+
+        combo_select_complite {
+            bindings = <&select_complite>;
+            key-positions = <15 20>;
+        };
+
+        chat_gpt {
+            bindings = <&kp LA(SPACE)>;
+            key-positions = <14 21>;
+        };
+
+        combo_google_meet_mute {
+            bindings = <&google_meet_mute>;
+            key-positions = <17 18>;
         };
     };
 
