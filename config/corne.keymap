@@ -103,54 +103,9 @@
     combos {
         compatible = "zmk,combos";
 
-        c1 {
-            bindings = <&kp ENTER>;
-            key-positions = <16 19>;
-        };
-
-        c4 {
-            bindings = <&kp ESCAPE>;
-            key-positions = <13 22>;
-        };
-
-        dot {
-            bindings = <&kp DOT>;
-            key-positions = <19 20>;
-        };
-
-        comma {
-            bindings = <&kp COMMA>;
-            key-positions = <20 21>;
-        };
-
-        skobka {
-            bindings = <&kp LEFT_PARENTHESIS>;
-            key-positions = <7 8>;
-        };
-
-        dollar {
-            bindings = <&kp CARET>;
-            key-positions = <31 32>;
-        };
-
-        carret {
-            bindings = <&kp DOLLAR>;
-            key-positions = <32 33>;
-        };
-
-        combo_select_complite {
-            bindings = <&select_complite>;
-            key-positions = <15 20>;
-        };
-
-        chat_gpt {
-            bindings = <&kp LA(SPACE)>;
-            key-positions = <14 21>;
-        };
-
-        combo_google_meet_mute {
-            bindings = <&google_meet_mute>;
-            key-positions = <17 18>;
+        cz {
+            bindings = <&kp LG(Z)>;
+            key-positions = <38 39>;
         };
     };
 
@@ -159,10 +114,10 @@
 
         base {
             bindings = <
-&kp LG(LS(MINUS))           &kp Q  &kp W  &kp F               &kp P  &kp B        &kp J                       &kp L            &kp U                  &kp Y           &kp LEFT_PARENTHESIS  &kp DOUBLE_QUOTES
-&mt LEFT_CONTROL LA(SPACE)  &kp A  &kp R  &kp S               &kp T  &kp G        &kp M                       &kp N            &kp E                  &kp I           &kp O                 &kp SEMI
-&kp LSHFT                   &kp Z  &kp X  &kp C               &kp D  &kp V        &kp K                       &kp H            &kp DOT                &hml SQT COMMA  &kp QUESTION          &kp EXCLAMATION
-                                          &mt LGUI LG(SPACE)  &mo 3  &kp SPACE    &mt LEFT_ALT LS(LA(SPACE))  &lt 2 BACKSPACE  &mt LEFT_SHIFT ESCAPE
+&kp LG(LS(MINUS))           &kp Q  &kp W  &kp F                &kp P      &kp B          &kp J                &kp L                     &kp U             &kp Y           &kp LEFT_PARENTHESIS  &kp DOUBLE_QUOTES
+&mt LEFT_CONTROL LA(SPACE)  &kp A  &kp R  &kp S                &kp T      &kp G          &kp M                &kp N                     &kp E             &kp I           &kp O                 &kp SEMI
+&kp LSHFT                   &kp Z  &kp X  &kp C                &kp D      &kp V          &kp K                &kp H                     &kp DOT           &hml SQT COMMA  &kp QUESTION          &kp EXCLAMATION
+                                          &mt LEFT_ALT ESCAPE  &kp SPACE  &lt 3 ENTER    &lt 2 LS(LA(SPACE))  &mt LEFT_SHIFT BACKSPACE  &mt LEFT_GUI TAB
             >;
         };
 
@@ -177,19 +132,19 @@
 
         nums {
             bindings = <
-&trans         &kp LS(EXCL)  &kp LS(AT)  &kp LS(POUND)     &kp LS(DLLR)       &kp LS(PRCNT)    &kp LS(CARET)  &kp LS(AMPS)          &kp LS(STAR)           &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp GRAVE
-&kp LESS_THAN  &kp N1        &kp N2      &kp N3            &kp N4             &kp N5           &kp N6         &kp N7                &kp N8                 &kp N9          &kp N0           &kp GREATER_THAN
-&trans         &trans        &kp PLUS    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp FSLH         &kp NUBS       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS       &kp EQUAL        &trans
-                                         &mt LGUI LG(Z)    &mo 4              &kp ENTER        &kp RET        &trans                &kp LALT
+&trans         &google_meet_mute  &kp LS(AT)  &kp LS(POUND)     &kp LS(DLLR)       &kp LS(PRCNT)    &kp LS(CARET)  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp GRAVE
+&kp LESS_THAN  &kp N1             &kp N2      &kp N3            &kp N4             &kp N5           &kp N6         &kp N7                &kp N8                 &kp N9          &kp N0           &kp GREATER_THAN
+&trans         &kp DOUBLE_QUOTES  &kp PLUS    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp FSLH         &kp BACKSLASH  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS       &kp EQUAL        &kp ASTERISK
+                                              &mt LGUI LG(Z)    &mo 4              &mo 4            &kp RET        &trans                &kp LALT
             >;
         };
 
         os {
             bindings = <
-&kp ESCAPE  &kp LS(LC(D))  &kp LS(LC(F))  &kp LG(W)       &kp LG(T)  &kp LA(LS(ENTER))    &kp LC(R)  &kp LA(LG(LEFT_ARROW))  &kp UP          &kp LA(LG(RIGHT))  &kp LG(LA(R))  &kp F12
-&kp LG(Q)   &kp DELETE     &kp LG(Z)      &kp LS(TAB)     &kp TAB    &kp LS(LG(F))        &kp LC(D)  &kp LEFT                &kp DOWN        &kp RIGHT          &kp BACKSPACE  &kp LA(LG(R))
-&kp LG(F2)  &kp LS(LG(A))  &kp LG(X)      &kp LG(A)       &kp LG(C)  &kp LG(LS(L))        &kp LSHFT  &kp LG(V)               &kp LG(B)       &kp LA(LGUI)       &kp LG(F)      &to 5
-                                          &mt LGUI LG(Z)  &trans     &kp LEFT_SHIFT       &kp ENTER  &lt 4 LG(LS(J))         &mt LALT LG(Z)
+&kp ESCAPE  &kp LS(LC(D))  &kp LS(LC(F))  &kp LG(W)       &kp LG(T)  &kp LA(LS(ENTER))    &kp LC(R)        &kp LA(LG(LEFT_ARROW))  &kp UP              &kp LA(LG(RIGHT))  &kp LG(LA(R))  &kp F12
+&kp LG(Q)   &kp DELETE     &kp LG(Z)      &kp LS(TAB)     &kp TAB    &kp LS(LG(F))        &kp LC(D)        &kp LEFT                &kp DOWN            &kp RIGHT          &kp BACKSPACE  &kp LA(LG(R))
+&kp LG(F2)  &kp LS(LG(A))  &kp LG(X)      &kp LG(A)       &kp LG(C)  &kp LG(LS(L))        &kp LSHFT        &kp LG(V)               &kp LG(B)           &kp LA(LGUI)       &kp LG(F)      &to 5
+                                          &mt LGUI LG(Z)  &trans     &trans               &lt 4 LS(LG(J))  &kp LG(LC(F))           &mt LEFT_GUI LG(Z)
             >;
         };
 
