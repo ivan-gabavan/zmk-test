@@ -75,7 +75,7 @@
         switch_to_ru: switch_to_ru {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(LS(MINUS)) &to 1>;
+            bindings = <&kp LG(LS(MINUS)) &to 0>;
             label = "SWITCH_TO_RU";
         };
 
@@ -111,16 +111,7 @@
 &kp LG(LS(MINUS))           &kp Q  &kp W  &kp F                &kp P      &kp B          &kp J                &kp L                     &kp U             &kp Y           &kp LEFT_PARENTHESIS  &kp DOUBLE_QUOTES
 &mt LEFT_CONTROL LA(SPACE)  &kp A  &kp R  &kp S                &kp T      &kp G          &kp M                &kp N                     &kp E             &kp I           &kp O                 &kp SEMI
 &kp MINUS                   &kp Z  &kp X  &kp C                &kp D      &kp V          &kp K                &kp H                     &kp DOT           &hml SQT COMMA  &kp QUESTION          &kp EXCLAMATION
-                                          &mt LEFT_ALT ESCAPE  &kp SPACE  &lt 3 ENTER    &lt 2 LS(LA(SPACE))  &mt LEFT_SHIFT BACKSPACE  &mt LEFT_GUI TAB
-            >;
-        };
-
-        ru {
-            bindings = <
-&switch_to_en  &kp Q     &hml O I     &kp A           &kp G            &kp COMMA    &kp SEMI                      &kp K            &kp E               &kp DOT          &kp X         &kp MINUS
-&kp TAB        &hml Z F  &kp H        &kp C           &kp N            &kp U        &kp V                         &kp Y            &hml BSLH T         &hml S B         &kp J         &kp LS(RPAR)
-&kp LSHFT      &kp P     &hml RBKT M  &kp W           &kp L            &kp D        &kp R                         &kp LBKT         &kp LC(LA(COMMA))   &kp LC(LA(DOT))  &kp LS(EXCL)  &kp LS(QMARK)
-                                      &mt LGUI LG(Z)  &lt 3 LA(SPACE)  &kp SPACE    &mt LEFT_SHIFT LS(LA(SPACE))  &lt 2 BACKSPACE  &mt LALT LG(SPACE)
+                                          &mt LEFT_ALT ESCAPE  &kp SPACE  &lt 2 ENTER    &lt 1 LS(LA(SPACE))  &mt LEFT_SHIFT BACKSPACE  &mt LEFT_GUI TAB
             >;
         };
 
@@ -129,34 +120,34 @@
 &trans         &google_meet_mute  &kp LS(AT)  &kp LS(POUND)     &kp LS(DLLR)       &kp LS(PRCNT)    &kp LS(CARET)  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp GRAVE
 &kp LESS_THAN  &kp N1             &kp N2      &kp N3            &kp N4             &kp N5           &kp N6         &kp N7                &kp N8                 &kp N9          &kp N0           &kp GREATER_THAN
 &trans         &kp DOUBLE_QUOTES  &kp PLUS    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp FSLH         &kp BACKSLASH  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS       &kp EQUAL        &kp ASTERISK
-                                              &mt LGUI LG(Z)    &kp LA(ENTER)      &mo 4            &kp RET        &trans                &kp LALT
+                                              &mt LGUI LG(Z)    &kp LA(ENTER)      &mo 3            &kp RET        &trans                &kp LALT
             >;
         };
 
         os {
             bindings = <
-&soft_off   &kp LS(LC(D))  &kp LS(LC(F))  &kp LG(W)       &kp LG(T)  &kp LA(LS(ENTER))    &kp LC(R)        &kp LA(LG(LEFT_ARROW))  &kp UP              &kp LA(LG(RIGHT))  &kp LG(LA(R))  &sys_reset
-&kp LG(Q)   &kp DELETE     &kp LG(Z)      &kp LS(TAB)     &kp TAB    &kp LS(LG(F))        &kp LC(D)        &kp LEFT                &kp DOWN            &kp RIGHT          &kp BACKSPACE  &kp LA(LG(R))
-&kp LG(F2)  &kp LS(LG(A))  &kp LG(X)      &kp LG(A)       &kp LG(C)  &kp LG(LS(L))        &kt LA(ENTER)    &kp LG(V)               &kp LG(B)           &kp LA(LGUI)       &kp LG(F)      &to 5
-                                          &mt LGUI LG(Z)  &trans     &trans               &lt 4 LS(LG(J))  &kp LG(LC(F))           &mt LEFT_GUI LG(Z)
+&soft_off   &kp LS(LC(D))  &kp LS(LC(F))  &kp LG(W)           &kp LG(T)  &kp LA(LS(ENTER))    &kp LC(R)        &kp LA(LG(LEFT_ARROW))  &kp UP              &kp LA(LG(RIGHT))  &kp LG(LA(R))  &sys_reset
+&kp LG(Q)   &kp DELETE     &kp LG(Z)      &kp LS(TAB)         &kp TAB    &kp LS(LG(F))        &kp LC(D)        &kp LEFT                &kp DOWN            &kp RIGHT          &kp BACKSPACE  &kp LA(LG(R))
+&kp LG(F2)  &kp LS(LG(A))  &kp LG(X)      &kp LG(A)           &kp LG(C)  &kp LG(LS(L))        &kt LA(ENTER)    &kp LG(V)               &kp LG(B)           &kp LA(LGUI)       &kp LG(F)      &to 4
+                                          &mt LGUI LG(LS(Z))  &trans     &trans               &lt 3 LS(LG(J))  &mt LEFT_ALT LG(LC(F))  &mt LEFT_GUI LG(Z)
             >;
         };
 
         mouses {
             bindings = <
-&trans           &msc SCRL_DOWN   &trans          &msc SCRL_DOWN  &msc SCRL_DOWN  &trans         &trans         &trans          &mmv MOVE_UP    &trans           &trans     &trans
-&msc SCRL_RIGHT  &msc SCRL_RIGHT  &msc SCRL_LEFT  &mkp RCLK       &mkp LCLK       &kp PAGE_UP    &kp PAGE_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp RCLK  &trans
-&trans           &trans           &trans          &msc SCRL_UP    &msc SCRL_UP    &trans         &trans         &trans          &trans          &trans           &trans     &trans
-                                                  &trans          &trans          &trans         &trans         &trans          &trans
+&trans  &trans           &trans          &msc SCRL_DOWN  &msc SCRL_DOWN  &trans         &trans         &trans          &mmv MOVE_UP    &trans           &trans     &trans
+&trans  &msc SCRL_RIGHT  &msc SCRL_LEFT  &mkp RCLK       &mkp LCLK       &kp PAGE_UP    &kp PAGE_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp RCLK  &trans
+&trans  &trans           &trans          &msc SCRL_UP    &msc SCRL_UP    &trans         &trans         &trans          &trans          &trans           &trans     &trans
+                                         &trans          &trans          &trans         &trans         &trans          &trans
             >;
         };
 
         game-mode {
             bindings = <
-&kp Q  &kp W  &kp E  &kp R     &kp T      &kp Y        &kp U      &kp I      &kp O     &kp P     &kp LBKT  &kp RIGHT_BRACKET
-&kp A  &kp S  &kp D  &kp F     &kp G      &kp H        &kp J      &kp K      &kp L     &kp SEMI  &kp APOS  &kp ENTER
-&kp Z  &kp X  &kp C  &kp V     &kp B      &kp N        &kp M      &kp COMMA  &kp DOT   &kp FSLH  &trans    &to 0
-                     &kp LGUI  &kp SPACE  &kp LSHFT    &kp LSHFT  &kp SPACE  &kp LALT
+&kp Q  &kp W  &kp E  &kp R             &kp T      &kp Y        &kp U      &kp I         &kp O     &kp P     &kp LBKT    &kp RIGHT_BRACKET
+&kp A  &kp S  &kp D  &kp F             &kp G      &kp H        &kp J      &kp K         &kp L     &kp SEMI  &kp APOS    &kp ENTER
+&kp Z  &kp X  &kp C  &kp V             &kp B      &kp N        &kp M      &kp COMMA     &kp DOT   &kp FSLH  &kp ESCAPE  &to 0
+                     &kp LEFT_CONTROL  &kp SPACE  &kp LSHFT    &kp LSHFT  &kp LEFT_GUI  &kp LALT
             >;
         };
     };
