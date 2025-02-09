@@ -142,7 +142,7 @@
             >;
         };
 
-        game-mode {
+        dota {
             bindings = <
 &kp N5          &kp NUMBER_4  &kp NUMBER_3  &kp NUMBER_2  &kp NUMBER_1  &kp Y        &trans  &trans  &trans  &trans  &trans  &trans
 &kp LEFT_SHIFT  &kp S         &kp E         &kp W         &kp Q         &kp R        &trans  &trans  &trans  &trans  &trans  &trans
@@ -151,7 +151,7 @@
             >;
         };
 
-        layer_5 {
+        dota_cam {
             bindings = <
 &trans  &trans   &trans    &kp UP_ARROW  &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp TAB  &kp LEFT  &kp DOWN      &kp RIGHT  &trans    &trans  &trans  &trans  &trans  &trans  &trans
