@@ -144,10 +144,19 @@
 
         game-mode {
             bindings = <
-&kp Q  &kp W  &kp E  &kp R             &kp T      &kp Y        &kp U      &kp I         &kp O     &kp P     &kp LBKT    &kp RIGHT_BRACKET
-&kp A  &kp S  &kp D  &kp F             &kp G      &kp H        &kp J      &kp K         &kp L     &kp SEMI  &kp APOS    &kp ENTER
-&kp Z  &kp X  &kp C  &kp V             &kp B      &kp N        &kp M      &kp COMMA     &kp DOT   &kp FSLH  &kp ESCAPE  &to 0
-                     &kp LEFT_CONTROL  &kp SPACE  &kp LSHFT    &kp LSHFT  &kp LEFT_GUI  &kp LALT
+&kp N5          &kp NUMBER_4  &kp NUMBER_3  &kp NUMBER_2  &kp NUMBER_1  &kp Y        &trans  &trans  &trans  &trans  &trans  &trans
+&kp LEFT_SHIFT  &kp S         &kp E         &kp W         &kp Q         &kp R        &trans  &trans  &trans  &trans  &trans  &trans
+&kp LEFT_ALT    &kp G         &kp H         &kp F         &kp D         &kp T        &trans  &trans  &trans  &trans  &trans  &to 0
+                                            &kp F1        &to 5         &kp SPACE    &to 0   &trans  &trans
+            >;
+        };
+
+        layer_5 {
+            bindings = <
+&trans  &trans   &trans    &kp UP_ARROW  &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp TAB  &kp LEFT  &kp DOWN      &kp RIGHT  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans   &trans    &trans        &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                           &trans        &trans     &trans    &trans  &trans  &trans
             >;
         };
     };
