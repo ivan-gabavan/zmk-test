@@ -65,6 +65,12 @@
             #sensor-binding-cells = <2>;
             bindings = <&rgb_ug>, <&rgb_ug>;
         };
+
+        oneshot_shift: oneshot_mod {
+                    timeout-ms = <2000>;
+                    tap-toggle = <0>;
+                    modifier = <&kp LSFT>;
+                };
     };
 
     macros {
