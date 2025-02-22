@@ -30,7 +30,6 @@
             #binding-cells = <2>;
             label = "HOMEROW_MODS_LEFT_HAND";
             bindings = <&kp>, <&kp>;
-
             tapping-term-ms = <300>;
             hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 39 40 41>;
         };
@@ -40,7 +39,6 @@
             #binding-cells = <2>;
             label = "HOMEROW_MODS_RIGHT_HAND";
             bindings = <&kp>, <&kp>;
-
             tapping-term-ms = <200>;
             hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38>;
         };
@@ -66,15 +64,15 @@
             bindings = <&rgb_ug>, <&rgb_ug>;
         };
 
-        one_shot_shift = &sticky_key MOD_LSFT {
-                    // Параметры можно настроить по своему вкусу
-                    release-after-tap = true; // "Отпустить" SHIFT после одного нажатия
-                    quick-release = false;
-                    retro-tap = false;
-                    wait-ms = <500>;         // Сколько мс ждать следующего нажатия
-                };
-
-
+        one_shot_shift: sticky_key {
+            compatible = "zmk,behavior-sticky-key";
+            label = "ONE_SHOT_SHIFT";
+            binding = <MOD_LSFT>;
+            release-after-tap;
+            quick-release = <false>;
+            retro-tap = <false>;
+            wait-ms = <500>;
+        };
     };
 
     macros {
