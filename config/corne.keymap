@@ -66,11 +66,15 @@
             bindings = <&rgb_ug>, <&rgb_ug>;
         };
 
-        oneshot_shift: oneshot_mod {
-                    timeout-ms = <2000>;
-                    tap-toggle = <0>;
-                    modifier = <&kp LSFT>;
+        one_shot_shift = &sticky_key MOD_LSFT {
+                    // Параметры можно настроить по своему вкусу
+                    release-after-tap = true; // "Отпустить" SHIFT после одного нажатия
+                    quick-release = false;
+                    retro-tap = false;
+                    wait-ms = <500>;         // Сколько мс ждать следующего нажатия
                 };
+
+
     };
 
     macros {
