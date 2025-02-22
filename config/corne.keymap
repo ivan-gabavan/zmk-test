@@ -104,46 +104,37 @@
 
         dota {
             bindings = <
-&kp N5          &kp NUMBER_4  &kp NUMBER_3  &kp NUMBER_2  &kp NUMBER_1  &kp Y        &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT  &kp S         &kp E         &kp W         &kp Q         &kp R        &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_ALT    &kp G         &kp H         &kp F         &kp D         &kp T        &trans  &trans  &trans  &trans  &trans  &to 0
-                                            &kp F1        &mo 1         &kp SPACE    &to 0   &trans  &trans
-            >;
-        };
-
-        dota_cam {
-            bindings = <
-&trans  &trans   &trans    &kp UP_ARROW  &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp TAB  &kp LEFT  &kp DOWN      &kp RIGHT  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans   &trans    &trans        &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                           &trans        &trans     &trans    &trans  &trans  &trans
+&kp N5          &kp NUMBER_4  &kp NUMBER_3  &kp NUMBER_2  &kp NUMBER_1  &kp Y     &trans  &trans  &trans  &trans  &trans  &trans
+&kp LEFT_SHIFT  &kp S         &kp Q         &kp W         &kp E         &kp R     &trans  &trans  &trans  &trans  &trans  &trans
+&kp LEFT_ALT    &kp G         &kp H         &kp F         &kp D         &kp T     &trans  &trans  &trans  &trans  &trans  &to 0
+                                            &kp N9        &kp N8        &kp N7    &to 0   &trans  &trans
             >;
         };
 
         a {
             bindings = <
-&kp    &kp    &kp    &kp           &kp    &kp           &kp            &kp        &kp                   &kp    &kp    &kp
-&kp Q  &kp A  &kp R  &kp S         &kp T  &kp ESCAPE    &kp BACKSPACE  &kp N      &kp E                 &kp I  &kp O  &kp Z
-&kp    &kp    &kp    &kp           &kp    &kp           &kp ENTER      &kp SPACE  &kp DOT               &kp    &kp    &kp
-                     &kp LEFT_ALT  &mo 4  &kp           &kp            &mo 3      &mt LEFT_COMMAND TAB
+&kp    &kp    &kp    &kp           &kp        &kp                 &kp             &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp    &kp    &kp
+&kp Q  &kp A  &kp R  &kp S         &kp T      &kp ESCAPE          &kp BACKSPACE   &kp N                 &kp E                  &kp I  &kp O  &kp Z
+&kp    &kp    &kp    &kp           &kp SPACE  &kp                 &kp ENTER       &kp SPACE             &kp DOT                &kp    &kp    &kp
+                     &kp LEFT_ALT  &mo 3      &kp LEFT_CONTROL    &kp LEFT_SHIFT  &mo 2                 &mt LEFT_COMMAND TAB
             >;
         };
 
         b {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp V   &kp P   &kp D   &kp C   &trans    &trans  &kp L   &kp H   &kp B   &kp K   &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans     &trans    &trans             &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans  &trans  &trans
+&trans  &kp V   &kp P   &kp D   &kp C      &trans    &kp LG(BACKSPACE)  &kp L             &kp H              &kp B   &kp K   &trans
+&trans  &trans  &trans  &trans  &kp SPACE  &trans    &trans             &kp SPACE         &trans             &trans  &trans  &trans
+                        &trans  &trans     &trans    &trans             &trans            &trans
             >;
         };
 
         c {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp X   &kp G   &kp W   &kp F   &trans    &trans  &kp U   &kp M   &kp Y   &kp J   &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans     &trans    &trans             &trans     &trans  &trans  &trans  &trans
+&trans  &kp X   &kp G   &kp W   &kp F      &trans    &kp LA(BACKSPACE)  &kp U      &kp M   &kp Y   &kp J   &trans
+&trans  &trans  &trans  &trans  &kp SPACE  &trans    &trans             &kp SPACE  &trans  &trans  &trans  &trans
+                        &trans  &trans     &trans    &trans             &trans     &trans
             >;
         };
     };
