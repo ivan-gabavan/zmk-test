@@ -67,24 +67,24 @@
         };
 
         oneshot_shift: oneshot_mod {
-                    timeout-ms = <2000>;
-                    tap-toggle = <0>;
-                    modifier = <&kp LSFT>;
-                };
+            timeout-ms = <2000>;
+            tap-toggle = <0>;
+            modifier = <&kp LSFT>;
+        };
     };
 
     macros {
         switch_to_ru: switch_to_ru {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(LS(MINUS)) &to 0>;
+            bindings = <&kp LG(LS(MINUS)) &to 3>;
             label = "SWITCH_TO_RU";
         };
 
         switch_to_en: switch_to_en {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(LS(MINUS)) &to 0>;
+            bindings = <&kp LG(LS(MINUS)) &to 3>;
             label = "SWITCH_TO_EN";
         };
 
@@ -108,21 +108,12 @@
     keymap {
         compatible = "zmk,keymap";
 
-        dota {
-            bindings = <
-&kp N5          &kp NUMBER_4  &kp NUMBER_3  &kp NUMBER_2  &kp NUMBER_1  &kp Y     &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT  &kp S         &kp Q         &kp W         &kp E         &kp R     &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_ALT    &kp G         &kp H         &kp F         &kp D         &kp T     &trans  &trans  &trans  &trans  &trans  &to 0
-                                            &kp N9        &kp N8        &kp N7    &to 0   &trans  &trans
-            >;
-        };
-
         a {
             bindings = <
 &kp    &kp    &kp    &kp           &kp        &kp                 &kp             &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp    &kp    &kp
 &kp Q  &kp A  &kp R  &kp S         &kp T      &kp ESCAPE          &kp BACKSPACE   &kp N                 &kp E                  &kp I  &kp O  &kp Z
 &kp    &kp    &kp    &kp           &kp SPACE  &kp                 &kp ENTER       &kp SPACE             &kp DOT                &kp    &kp    &kp
-                     &kp LEFT_ALT  &mo 3      &kp LEFT_CONTROL    &kp LEFT_SHIFT  &mo 2                 &mt LEFT_COMMAND TAB
+                     &kp LEFT_ALT  &mo 2      &kp LEFT_CONTROL    &kp LEFT_SHIFT  &mo 1                 &mt LEFT_COMMAND TAB
             >;
         };
 
@@ -141,6 +132,15 @@
 &trans  &kp X   &kp G   &kp W   &kp F      &trans    &kp LA(BACKSPACE)  &kp U      &kp M   &kp Y   &kp J   &trans
 &trans  &trans  &trans  &trans  &kp SPACE  &trans    &trans             &kp SPACE  &trans  &trans  &trans  &trans
                         &trans  &trans     &trans    &trans             &trans     &trans
+            >;
+        };
+
+        dota {
+            bindings = <
+&kp N5          &kp NUMBER_4  &kp NUMBER_3  &kp NUMBER_2  &kp NUMBER_1  &kp Y     &trans  &trans  &trans  &trans  &trans  &trans
+&kp LEFT_SHIFT  &kp S         &kp Q         &kp W         &kp E         &kp R     &trans  &trans  &trans  &trans  &trans  &trans
+&kp LEFT_ALT    &kp G         &kp H         &kp F         &kp D         &kp T     &trans  &trans  &trans  &trans  &trans  &to 3
+                                            &kp N9        &kp N8        &kp N7    &to 3   &trans  &trans
             >;
         };
     };
