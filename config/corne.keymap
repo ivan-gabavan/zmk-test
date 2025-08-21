@@ -98,6 +98,7 @@
         };
 
         // Go programming macros
+
         go_err: go_err {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -260,10 +261,10 @@
 
         base {
             bindings = <
-&kp F24               &kp Q  &kp W  &kp F                &kp P      &kp B          &kp J      &kp L                     &kp U             &kp Y           &kp F21                    &kp DOUBLE_QUOTES
-&mt LEFT_CONTROL F22  &kp A  &kp R  &kp S                &kp T      &kp G          &kp M      &kp N                     &kp E             &kp I           &kp O                      &hml SEMICOLON COLON
+&kp F13               &kp Q  &kp W  &kp F                &kp P      &kp B          &kp J      &kp L                     &kp U             &kp Y           &kp F21                    &kp DOUBLE_QUOTES
+&mt LEFT_CONTROL F14  &kp A  &kp R  &kp S                &kp T      &kp G          &kp M      &kp N                     &kp E             &kp I           &kp O                      &hml SEMICOLON COLON
 &kp MINUS             &kp Z  &kp X  &kp C                &kp D      &kp V          &kp K      &kp H                     &kp DOT           &hml SQT COMMA  &hml QUESTION EXCLAMATION  &kp EQUAL
-                                    &mt LEFT_ALT ESCAPE  &kp SPACE  &lt 2 ENTER    &lt 1 F23  &mt LEFT_SHIFT BACKSPACE  &mt LEFT_GUI TAB
+                                    &mt LEFT_ALT ESCAPE  &kp SPACE  &lt 2 ENTER    &lt 1 F16  &mt LEFT_SHIFT BACKSPACE  &mt LEFT_GUI TAB
             >;
         };
 
@@ -278,10 +279,10 @@
 
         os {
             bindings = <
-&soft_off      &trans      &trans     &kp F13           &kp F14       &kp F15    &kp F17  &kp LA(LG(LEFT_ARROW))  &kp UP    &kp LA(LG(RIGHT))  &trans         &sys_reset
-&kp LESS_THAN  &kp DELETE  &kp LG(Z)  &kp LEFT_COMMAND  &kp LEFT_ALT  &kp F16    &kp F18  &kp LEFT                &kp DOWN  &kp RIGHT          &kp BACKSPACE  &kp GREATER_THAN
-&trans         &trans      &trans     &trans            &trans        &kp F20    &kt F19  &kp C_SLEEP_MODE        &trans    &trans             &trans         &to 6
-                                      &trans            &trans        &trans     &mo 5    &mo 3                   &mo 4
+&soft_off      &trans      &trans            &trans            &trans        &kp F17    &trans   &kp LA(LG(LEFT_ARROW))  &kp UP    &kp LA(LG(RIGHT))  &trans         &sys_reset
+&kp LESS_THAN  &kp DELETE  &kp LEFT_CONTROL  &kp LEFT_COMMAND  &kp LEFT_ALT  &kp F16    &kp F18  &kp LEFT                &kp DOWN  &kp RIGHT          &kp BACKSPACE  &kp GREATER_THAN
+&trans         &trans      &trans            &trans            &trans        &kp F20    &kt F19  &kp C_SLEEP_MODE        &trans    &trans             &trans         &to 6
+                                             &trans            &trans        &trans     &mo 5    &mo 3                   &mo 4
             >;
         };
 
@@ -299,11 +300,12 @@
             // Top row: common patterns (err, func, for, package, print | json, test, context, defer)
             // Home row: core syntax (:=, return, struct, type, goroutine | make, nil check, else, interface, switch)
             // Bottom row: utilities (range, append, len)
+
             bindings = <
-&trans          &go_err     &go_func    &go_for     &go_pkg        &go_print    &go_json  &go_test   &go_ctx     &trans       &go_defer  &trans
-&kp LEFT_BRACE  &go_assign  &go_return  &go_struct  &go_type       &go_goroutine    &go_make  &go_nil    &go_else    &go_iface    &go_switch &kp RIGHT_BRACE
-&trans          &go_range   &go_append  &go_len     &trans         &trans       &trans    &trans     &trans      &trans       &trans     &trans
-                                        &trans      &trans         &trans       &trans    &trans     &trans
+&trans          &go_err     &go_func    &go_for     &go_pkg   &go_print        &go_json  &go_test  &go_ctx   &trans     &go_defer   &trans
+&kp LEFT_BRACE  &go_assign  &go_return  &go_struct  &go_type  &go_goroutine    &go_make  &go_nil   &go_else  &go_iface  &go_switch  &kp RIGHT_BRACE
+&trans          &go_range   &go_append  &go_len     &trans    &trans           &trans    &trans    &trans    &trans     &trans      &trans
+                                        &trans      &trans    &trans           &trans    &trans    &trans
             >;
         };
 
