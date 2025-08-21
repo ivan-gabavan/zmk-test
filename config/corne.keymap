@@ -281,7 +281,7 @@
             bindings = <
 &soft_off      &trans      &trans            &trans            &trans        &trans     &trans   &kp LA(LG(LEFT_ARROW))  &kp UP    &kp LA(LG(RIGHT))  &trans         &sys_reset
 &kp LESS_THAN  &kp DELETE  &kp LEFT_CONTROL  &kp LEFT_COMMAND  &kp LEFT_ALT  &kp F16    &kp F18  &kp LEFT                &kp DOWN  &kp RIGHT          &kp BACKSPACE  &kp GREATER_THAN
-&trans         &trans      &trans            &trans            &trans        &kp F17    &kt F19  &kp C_SLEEP_MODE        &trans    &trans             &trans         &to 6
+&trans         &trans      &trans            &trans            &trans        &kp F17    &kt F19  &trans                  &trans    &trans             &trans         &to 6
                                              &trans            &trans        &trans     &mo 5    &mo 3                   &mo 4
             >;
         };
@@ -321,8 +321,8 @@
         dota {
             bindings = <
 &kp N5          &kp NUMBER_4  &kp NUMBER_3  &kp NUMBER_2  &kp NUMBER_1  &kp Y           &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT  &kp S         &kp E         &kp W         &kp Q         &kp R           &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_ALT    &kp G         &kp H         &kp F         &kp D         &kp T           &trans  &trans  &trans  &trans  &trans  &to 0
+&kp LEFT_SHIFT  &kp S         &kp Q         &kp W         &kp E         &kp R           &trans  &trans  &trans  &trans  &trans  &trans
+&kp LEFT_ALT    &kp A         &kp H         &kp D         &kp F         &kp T           &trans  &trans  &trans  &trans  &trans  &to 0
                                             &kp N8        &kp N7        &kp NUMBER_6    &to 0   &trans  &trans
             >;
         };
