@@ -123,10 +123,10 @@
 
         os {
             bindings = <
-&soft_off       &trans      &trans     &kp F13           &kp F14       &kp F15    &kp F17  &kp LA(LG(LEFT_ARROW))  &kp UP    &kp LA(LG(RIGHT))  &trans         &sys_reset
-&kp LEFT_BRACE  &kp DELETE  &kp LG(Z)  &kp LEFT_COMMAND  &kp LEFT_ALT  &kp F16    &kp F18  &kp LEFT                &kp DOWN  &kp RIGHT          &kp BACKSPACE  &kp RIGHT_BRACE
-&trans          &trans      &trans     &trans            &trans        &kp F20    &kt F19  &kp C_SLEEP_MODE        &trans    &trans             &trans         &to 6
-                                       &trans            &trans        &trans     &mo 5    &mo 3                   &mo 4
+&soft_off      &trans      &trans     &kp F13           &kp F14       &kp F15    &kp F17  &kp LA(LG(LEFT_ARROW))  &kp UP    &kp LA(LG(RIGHT))  &trans         &sys_reset
+&kp LESS_THAN  &kp DELETE  &kp LG(Z)  &kp LEFT_COMMAND  &kp LEFT_ALT  &kp F16    &kp F18  &kp LEFT                &kp DOWN  &kp RIGHT          &kp BACKSPACE  &kp GREATER_THAN
+&trans         &trans      &trans     &trans            &trans        &kp F20    &kt F19  &kp C_SLEEP_MODE        &trans    &trans             &trans         &to 6
+                                      &trans            &trans        &trans     &mo 5    &mo 3                   &mo 4
             >;
         };
 
@@ -141,10 +141,10 @@
 
         spec2 {
             bindings = <
-&trans         &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&kp LESS_THAN  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &kp GREATER_THAN
-&trans         &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                               &trans  &trans  &trans    &trans  &trans  &trans
+&trans          &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&kp LEFT_BRACE  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &kp RIGHT_BRACE
+&trans          &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                                &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
 
