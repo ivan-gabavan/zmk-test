@@ -96,6 +96,161 @@
             bindings = <&kp LG(D) &kp LG(E)>;
             label = "GOOGLE_MEET_MUTE";
         };
+
+        // Go programming macros
+        go_err: go_err {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp I &kp F &kp SPACE &kp E &kp R &kp R &kp SPACE &kp EXCL &kp EQUAL &kp SPACE &kp N &kp I &kp L &kp SPACE &kp LBRC &kp ENTER &kp TAB &kp R &kp E &kp T &kp U &kp R &kp N &kp SPACE &kp E &kp R &kp R &kp ENTER &kp RBRC>;
+            label = "GO_ERR";
+        };
+
+        go_func: go_func {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp F &kp U &kp N &kp C &kp SPACE>;
+            label = "GO_FUNC";
+        };
+
+        go_for: go_for {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp F &kp O &kp R &kp SPACE &kp UNDERSCORE &kp COMMA &kp SPACE>;
+            label = "GO_FOR";
+        };
+
+        go_pkg: go_pkg {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp P &kp A &kp C &kp K &kp A &kp G &kp E &kp SPACE &kp M &kp A &kp I &kp N &kp ENTER &kp ENTER>;
+            label = "GO_PKG";
+        };
+
+        go_print: go_print {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp F &kp M &kp T &kp DOT &kp LS(P) &kp R &kp I &kp N &kp T &kp L &kp N &kp LPAR &kp DQT &kp DQT &kp COMMA &kp SPACE>;
+            label = "GO_PRINT";
+        };
+
+        go_json: go_json {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SPACE &kp GRAVE &kp J &kp S &kp O &kp N &kp COLON &kp DQT &kp DQT &kp GRAVE>;
+            label = "GO_JSON";
+        };
+
+        go_test: go_test {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp F &kp U &kp N &kp C &kp SPACE &kp LS(T) &kp E &kp S &kp T>;
+            label = "GO_TEST";
+        };
+
+        go_ctx: go_ctx {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp C &kp T &kp X &kp SPACE &kp C &kp O &kp N &kp T &kp E &kp X &kp T &kp DOT &kp LS(C) &kp O &kp N &kp T &kp E &kp X &kp T>;
+            label = "GO_CTX";
+        };
+
+        go_defer: go_defer {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp D &kp E &kp F &kp E &kp R &kp SPACE>;
+            label = "GO_DEFER";
+        };
+
+        go_assign: go_assign {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp COLON &kp EQUAL &kp SPACE>;
+            label = "GO_ASSIGN";
+        };
+
+        go_return: go_return {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp R &kp E &kp T &kp U &kp R &kp N &kp SPACE>;
+            label = "GO_RETURN";
+        };
+
+        go_struct: go_struct {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp S &kp T &kp R &kp U &kp C &kp T &kp SPACE &kp LBRC &kp ENTER &kp TAB>;
+            label = "GO_STRUCT";
+        };
+
+        go_type: go_type {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp T &kp Y &kp P &kp E &kp SPACE>;
+            label = "GO_TYPE";
+        };
+
+        go_goroutine: go_goroutine {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp G &kp O &kp SPACE &kp F &kp U &kp N &kp C &kp LPAR &kp RPAR &kp SPACE &kp LBRC &kp ENTER &kp TAB>;
+            label = "GO_GOROUTINE";
+        };
+
+        go_make: go_make {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp M &kp A &kp K &kp E &kp LPAR &kp LBKT &kp RBKT>;
+            label = "GO_MAKE";
+        };
+
+        go_nil: go_nil {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SPACE &kp EXCL &kp EQUAL &kp SPACE &kp N &kp I &kp L>;
+            label = "GO_NIL";
+        };
+
+        go_else: go_else {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SPACE &kp E &kp L &kp S &kp E &kp SPACE &kp LBRC &kp ENTER &kp TAB>;
+            label = "GO_ELSE";
+        };
+
+        go_iface: go_iface {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp I &kp N &kp T &kp E &kp R &kp F &kp A &kp C &kp E &kp LBRC &kp RBRC>;
+            label = "GO_IFACE";
+        };
+
+        go_switch: go_switch {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp S &kp W &kp I &kp T &kp C &kp H &kp SPACE>;
+            label = "GO_SWITCH";
+        };
+
+        go_range: go_range {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp R &kp A &kp N &kp G &kp E &kp SPACE>;
+            label = "GO_RANGE";
+        };
+
+        go_append: go_append {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp A &kp P &kp P &kp E &kp N &kp D &kp LPAR>;
+            label = "GO_APPEND";
+        };
+
+        go_len: go_len {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp L &kp E &kp N &kp LPAR>;
+            label = "GO_LEN";
+        };
     };
 
     combos { compatible = "zmk,combos"; };
@@ -140,11 +295,15 @@
         };
 
         spec2 {
+            // Go programming layer - access via layer 4
+            // Top row: common patterns (err, func, for, package, print | json, test, context, defer)
+            // Home row: core syntax (:=, return, struct, type, goroutine | make, nil check, else, interface, switch)
+            // Bottom row: utilities (range, append, len)
             bindings = <
-&trans          &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_BRACE  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &kp RIGHT_BRACE
-&trans          &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                                &trans  &trans  &trans    &trans  &trans  &trans
+&trans          &go_err     &go_func    &go_for     &go_pkg        &go_print    &go_json  &go_test   &go_ctx     &trans       &go_defer  &trans
+&kp LEFT_BRACE  &go_assign  &go_return  &go_struct  &go_type       &go_goroutine    &go_make  &go_nil    &go_else    &go_iface    &go_switch &kp RIGHT_BRACE
+&trans          &go_range   &go_append  &go_len     &trans         &trans       &trans    &trans     &trans      &trans       &trans     &trans
+                                        &trans      &trans         &trans       &trans    &trans     &trans
             >;
         };
 
